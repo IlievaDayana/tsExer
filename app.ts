@@ -174,3 +174,14 @@ waterMelonReused = waterMelon;
 // waterMelonReused = stringMelon; ->> this will cause ERROR
 
 waterMelonReused(4, 6);
+
+
+//<-------------------- UNKNOWN TYPES in ts ---------------------------->
+let beetsVeggie: unknown;
+let beetsNot:string;
+
+
+beetsVeggie = 5;
+beetsVeggie = '5';
+// even though the variable is string since it is unknown there must be a type check to assign the value
+beetsNot = beetsVeggie;
