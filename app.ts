@@ -178,10 +178,21 @@ waterMelonReused(4, 6);
 
 //<-------------------- UNKNOWN TYPES in ts ---------------------------->
 let beetsVeggie: unknown;
-let beetsNot:string;
+let beetsNot: string;
 
 
 beetsVeggie = 5;
 beetsVeggie = '5';
 // even though the variable is string since it is unknown there must be a type check to assign the value
 beetsNot = beetsVeggie;
+
+
+// restParameter
+
+const add = (...numbers: number[]) => {
+    return numbers.reduce((curResult, prevValue) => {
+        return curResult + prevValue;
+    }, 0)
+}
+
+const resultAccum: number = add(2, 5, 2, 5, 13);

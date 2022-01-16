@@ -1,0 +1,8 @@
+tsc --init
+creates a tsconfig file where we can edit what checks additionally we want to have in *.ts .
+
+
+tsc
+it compiles all .ts files in the directory
+
+sourceMaps must be enabled and we should put a breakpoint to debug with the mozilla extension enabled DEBUG
